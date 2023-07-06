@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dark Stage Home Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        
+        #stage {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #logo {
+            font-size: 48px;
+            margin-bottom: 40px;
+        }
+        
+        .buttons {
+            margin-top: 40px;
+        }
+        
+        .buttons button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="stage">
+        <div id="logo">
+            <h1>Your Logo</h1>
+        </div>
+        <div class="buttons">
+            <button onclick="window.location.href='another-page.html'">Go to Another Page</button>
+            <button onclick="compareMenus()">Compare Menus</button>
+        </div>
+    </div>
+
+    <script>
+        function compareMenus() {
+            // Implement your compare menus functionality here
+            // You can show/hide elements or navigate to a specific page
+            // based on user's requirements
+            window.location.href = 'compare-menus.html';
+        }
+    </script>
+</body>
+</html>
